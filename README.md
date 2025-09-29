@@ -11,7 +11,7 @@ Uniquindío <br />
 Con esta práctica se iniciará el desarrollo del código fuente en Python del proyecto del espacio académico. En este caso, y de acuerdo a la arquitectura mostrada en la siguiente figura, se construirá el código del lado del servidor para la gestión de usuarios y de consultas médicas.
 
 <p align="center">
-<img  src="proyecto.png" width="800" >
+<img  src="Programación-II-2025.png" width="800" >
 </p>
 En ese sentido, esta parte del proyecto contempla la creación y prueba de las funciones construidas en la práctica de laboratorio anterior. 
 
