@@ -36,7 +36,7 @@ De otro lado, se suministran los archivos [project_client.py](project_client.py)
 
 Para la realización de las pruebas debe ejecutar primero el programa [project_server.py](project_server.py), la recomendación es verificar el correcto funcionamiento de las funciones, una a la vez. Posteriormente se puede ejecutar el programa [test_project_client.py](test_project_client.py), en caso de que se creen ventanas emergentes de Windows solicitando permisos, por favor otorgarlos ya que los programas hacen uso de los servicios de red. 
 
-Tenga en cuenta que es posible que [project_server.py](project_server.py) y[test_project_client.py](test_project_client.py) se ejecuten en computadores diferentes siempre y cuando los equipos se encuentren conectados a la misma red LAN cableada o inalámbrica. En ese caso basta con consultar la dirección IP del computador que está ejecutando  [project_server.py](project_server.py) mediante el comando ipconfig como se muestra en la siguiente figura.
+Tenga en cuenta que es posible que [project_server.py](project_server.py) y[test_project_client.py](test_project_client.py) se ejecuten en computadores diferentes siempre y cuando los equipos se encuentren conectados a la misma red LAN cableada o inalámbrica. En ese caso basta con consultar la dirección IP del computador que está ejecutando [project_server.py](project_server.py) mediante el comando ipconfig como se muestra en la siguiente figura.
 
 
 <p align="center">
@@ -45,11 +45,6 @@ Tenga en cuenta que es posible que [project_server.py](project_server.py) y[test
 
 La IP encontrada debe sustituir "localhost" en la línea 6 de [test_project_client.py](https://github.com/parrado/lab2/blob/c80a0f73b9324b082ebea63a3377358d36a4c8d8/test_trivia_client.py#L6#L6)
 
-# Entrega del laboratorio
+# Entregables
 
-El laboratorio debe ser presentado mediante:
-
-1. Repositorio en GitHub.
-2. Informe de laboratorio.
-
-El informe de laboratorio y el enlace al repositorio de GitHub deben ser compartidos en el enlace dispuesto para tal fin en la plataforma Google Classroom.
+Para esta entrega no se requiere informe, únicamente la sustentación y el repositorio en GitHub cuyo enlace debe ser compartido en el enlace dispuesto para tal fin en la plataforma Google Classroom.
