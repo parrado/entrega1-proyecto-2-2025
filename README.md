@@ -25,7 +25,7 @@ El servidor debe permitir el registro de usuarios con un nombre, número de iden
 * Solicitar una consulta con un médico.
 * Listar los médicos disponibles
 
-Se debe incluir en el archivo [project_server.py](project_server.py) las funciones creadas en el lab1 y una nueva función que permite listar los médicos disponibles.
+Se debe incluir en el archivo [project_server.py](project_server.py) las funciones creadas en el lab1 y una nueva función que permita listar los médicos disponibles.
 
 De otro lado, se suministran los archivos [project_client.py](project_client.py) y [test_project_client.py](test_project_client.py). En este caso,  [project_client.py](project_client.py) implementa la funcionalidad básica de los usuarios para la conexión con el servidor por lo que **no debe ser modificado bajo ninguna circunstancia**. De otro lado,  [test_project_client.py](test_project_client.py) es un archivo de prueba que se suministra para verificar el correcto funcionamiento del servidor y que puede ser modificado a gusto de los miembros del equipo. Para que [project_client.py](project_client.py) pueda funcionar correctamente se debe instalar el módulo de Python requests ejecutando el siguiente comando en una terminal:
 
