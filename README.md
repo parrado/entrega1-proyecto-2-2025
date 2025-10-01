@@ -17,15 +17,16 @@ En ese sentido, esta parte del proyecto contempla la creación y prueba de las f
 
 ## Código base suministrado
 
-Se suministra el código base del servidor en el archivo [project_server.py](project_server.py) el cual contiene toda la funcionalidad para que éste opere dentro de una red de área local o en el mismo equipo de prueba. **En este archivo se debe realizar el llamada de las funciones construidas por su equpipo de trabajo** de acuerdo a los comentarios incluidos. **La correcta integración de estas funciones y su correcto funcionamiento determina la evaluación del lado del servidor del proyecto**.
+Se suministra el código base del servidor en el archivo [project_server.py](project_server.py) el cual contiene toda la funcionalidad para que éste opere dentro de una red de área local o en el mismo equipo de prueba, *este archivo no debe ser modificado bajo ninguna circustancia*. En ese sentido,  [project_server.py](project_server.py) usa el archivo [users.py](users.py) que incluye definiciones de funciones, las cuales deben ser implementadas o complementadas como parte de esta entrega del proyecto a partir del código creado en el [laboratorio 1](https://github.com/parrado/lab1-2-2025) y de acuerdo a lo descrito en los comentarios del archivo. **La correcta integración de estas funciones y su correcto funcionamiento determina la evaluación del lado del servidor del proyecto**.
 
 El servidor debe permitir el registro de usuarios con un nombre, número de identificación, contraseña y rol, y una vez un usuario esté registrado podrá:
 
 * Iniciar sesión usando el número de identificación y la contraseña.
+* Cerrar sesión
 * Solicitar una consulta con un médico.
 * Listar los médicos disponibles
 
-Se debe incluir en el archivo [project_server.py](project_server.py) las funciones creadas en el lab1 y una nueva función que permita listar los médicos disponibles.
+Se debe incluir en el archivo [project_server.py](project_server.py) las funciones creadas en el lab1 y dos una nuevas funciones que permita listar los médicos disponibles y cerrar sesión.
 
 De otro lado, se suministran los archivos [project_client.py](project_client.py) y [test_project_client.py](test_project_client.py). En este caso,  [project_client.py](project_client.py) implementa la funcionalidad básica de los usuarios para la conexión con el servidor por lo que **no debe ser modificado bajo ninguna circunstancia**. De otro lado,  [test_project_client.py](test_project_client.py) es un archivo de prueba que se suministra para verificar el correcto funcionamiento del servidor y que puede ser modificado a gusto de los miembros del equipo. Para que [project_client.py](project_client.py) pueda funcionar correctamente se debe instalar el módulo de Python requests ejecutando el siguiente comando en una terminal:
 
