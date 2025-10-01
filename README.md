@@ -44,7 +44,7 @@ Tenga en cuenta que es posible que [project_server.py](project_server.py) y[test
 <img  src="Captura de pantalla (2).png" width="800" >
 </p>
 
-La IP encontrada debe sustituir "localhost" en la línea 8 de [test_project_client.py](https://github.com/parrado/lab2/blob/c80a0f73b9324b082ebea63a3377358d36a4c8d8/test_trivia_client.py#L6#L6)
+La IP encontrada debe sustituir "localhost" en la línea 8 de [test_project_client.py](https://github.com/parrado/entrega1-proyecto-2-2025/blob/04f719d46d3ce8efa7a7e977c52ec68f97b5276f/test_project_client.py#L8)
 
 # Entregables
 
