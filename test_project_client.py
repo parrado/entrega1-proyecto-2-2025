@@ -1,4 +1,4 @@
-import project_client
+from project_client import Client
 
 # Intenta registrar un usuario
 name="sebastian"
@@ -7,14 +7,16 @@ role="patient"
 id=12345
 url="http://localhost:80"
 
-print(project_client.registerUser(url,name,id,password,role))
+project_client=Client(url)
+
+print(project_client.registerUser(name,id,password,role))
 
 
 # Inicia sesión con usuario
-print(project_client.openSession(url,id,password))
+print(project_client.openSession(id,password))
 
 # Obtiene la lista de médicos
-print(project_client.getDoctorsList(url,id))
+print(project_client.getDoctorsList(id))
 
 
 doctorid=54321
@@ -23,9 +25,9 @@ time="10:00"
 
 
 # Solicita una cita con un médico
-print(project_client.addAppointment(url,id,doctorid,date,time))
+print(project_client.addAppointment(doctorid,id,date,time))
 
 
 
 # Cierra sesión con usuario
-print(project_client.closeSession(url,id))
+print(project_client.closeSession(id))

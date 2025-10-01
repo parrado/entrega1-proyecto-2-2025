@@ -2,38 +2,39 @@
 import requests
 import socket
 
+class Client:
+    def __init__(self, url):
+        self.url = url
+
+    # Método para registrar usuario
+    def addAppointment(self,id,doctorid,date,time):    
+        response=requests.post(self.url+'/addappointment',data=f'id={id}&doctorid={doctorid}&date={date}&time={time}')
+        return response.content.decode('utf-8')
 
 
-# Función para registrar usuario
-def addAppointment(url,id,doctorid,date,time):    
-    response=requests.post(url+'/addappointment',data=f'id={id}&doctorid={doctorid}&date={date}&time={time}')
-    return response.content.decode('utf-8')
+    # Función para registrar usuario
+    def registerUser(self,name,id,role,password):    
+        response=requests.post(self.url+'/register',data=f'name={name}&id={id}&role={role}&password={password}')
+        return response.content.decode('utf-8')
 
+    # Funciónn para abrir una sesión
+    def openSession(self,id,password):
+        hostname = socket.gethostname()
+        IPAddr = socket.gethostbyname(hostname)    
+        response=requests.put(self.url+'/login',data=f'id={id}&password={password}&ip={IPAddr}')
+        return response.content.decode('utf-8')
 
-# Función para registrar usuario
-def registerUser(url,name,id,role,password):    
-    response=requests.post(url+'/register',data=f'name={name}&id={id}&role={role}&password={password}')
-    return response.content.decode('utf-8')
-
-# Funciónn para abrir una sesión
-def openSession(url,id,password):
-    hostname = socket.gethostname()
-    IPAddr = socket.gethostbyname(hostname)    
-    response=requests.put(url+'/login',data=f'id={id}&password={password}&ip={IPAddr}')
-    return response.content.decode('utf-8')
-
-# Función para cerrar una sesión
-def closeSession(url,id):    
-    response=requests.put(url+'/logout',data=f'id={id}')
-    return response.content.decode('utf-8')
+    # Función para cerrar una sesión
+    def closeSession(self,id):    
+        response=requests.put(self.url+'/logout',data=f'id={id}')
+        return response.content.decode('utf-8')
 
 
 
-
-# Función para obtener la lista de médicos
-def getDoctorsList(url,id):    
-    response=requests.get(url+'/listdoctors',data=f'id={id}')
-    return response.content.decode('utf-8')
+    # Función para obtener la lista de médicos
+    def getDoctorsList(self,id):    
+        response=requests.get(self.url+'/listdoctors',data=f'id={id}')
+        return response.content.decode('utf-8')
 
 
 
