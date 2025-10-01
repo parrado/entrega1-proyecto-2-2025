@@ -26,7 +26,7 @@ El servidor debe permitir el registro de usuarios con un nombre, número de iden
 * Solicitar una consulta con un médico.
 * Listar los médicos disponibles
 
-Se debe incluir en el archivo [project_server.py](project_server.py) las funciones creadas en el lab1 y dos una nuevas funciones que permita listar los médicos disponibles y cerrar sesión.
+Se debe incluir en el archivo  [users.py](users.py) el llamado a las funciones creadas en el  [laboratorio 1](https://github.com/parrado/lab1-2-2025) y dos funciones nuevas,  una para listar los médicos disponibles y otra para cerrar sesión.
 
 De otro lado, se suministran los archivos [project_client.py](project_client.py) y [test_project_client.py](test_project_client.py). En este caso,  [project_client.py](project_client.py) implementa la funcionalidad básica de los usuarios para la conexión con el servidor por lo que **no debe ser modificado bajo ninguna circunstancia**. De otro lado,  [test_project_client.py](test_project_client.py) es un archivo de prueba que se suministra para verificar el correcto funcionamiento del servidor y que puede ser modificado a gusto de los miembros del equipo. Para que [project_client.py](project_client.py) pueda funcionar correctamente se debe instalar el módulo de Python requests ejecutando el siguiente comando en una terminal:
 
@@ -44,7 +44,7 @@ Tenga en cuenta que es posible que [project_server.py](project_server.py) y[test
 <img  src="Captura de pantalla (2).png" width="800" >
 </p>
 
-La IP encontrada debe sustituir "localhost" en la línea 6 de [test_project_client.py](https://github.com/parrado/lab2/blob/c80a0f73b9324b082ebea63a3377358d36a4c8d8/test_trivia_client.py#L6#L6)
+La IP encontrada debe sustituir "localhost" en la línea 8 de [test_project_client.py](https://github.com/parrado/lab2/blob/c80a0f73b9324b082ebea63a3377358d36a4c8d8/test_trivia_client.py#L6#L6)
 
 # Entregables
 
