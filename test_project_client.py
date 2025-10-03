@@ -9,7 +9,7 @@ url="http://localhost:80"
 
 project_client=Client(url)
 
-print(project_client.registerUser(name,id,password,role))
+print(project_client.registerUser(name,id,role,password))
 
 
 # Inicia sesión con usuario
@@ -31,3 +31,4 @@ print(project_client.addAppointment(doctorid,id,date,time))
 
 # Cierra sesión con usuario
 print(project_client.closeSession(id))
+
