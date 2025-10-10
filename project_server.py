@@ -28,6 +28,12 @@ class RequestHandler(BaseHTTPRequestHandler):
                 post_body = self.rfile.read(content_len)
                 params_dict=parse_qs(post_body.decode(), strict_parsing=True)
                 response=dumps(users.doctorsList(params_dict['id'][0]))
+            
+            case '/getdoctorip':
+                content_len = int(self.headers.get('Content-Length'))
+                post_body = self.rfile.read(content_len)
+                params_dict=parse_qs(post_body.decode(), strict_parsing=True)
+                response=users.getDoctorIP(params_dict['id'][0])
 
                 
         self.send_response(200)

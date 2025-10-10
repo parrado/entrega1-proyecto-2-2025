@@ -27,6 +27,9 @@ time="10:00"
 # Solicita una cita con un médico
 print(project_client.addAppointment(doctorid,id,date,time))
 
+# Solicita IP del médico
+print(project_client.getDoctorIP(id))
+
 
 
 # Cierra sesión con usuario

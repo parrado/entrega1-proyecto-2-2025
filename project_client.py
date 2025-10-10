@@ -35,6 +35,12 @@ class Client:
     def getDoctorsList(self,id):    
         response=requests.get(self.url+'/listdoctors',data=f'id={id}')
         return response.content.decode('utf-8')
+    
+    # Función la IP del médicot
+    def getDoctorIP(self,id):    
+        response=requests.get(self.url+'/getdoctorip',data=f'id={id}')
+        return response.content.decode('utf-8')
+
 
 
 
