@@ -29,6 +29,10 @@ class Client:
         response=requests.put(self.url+'/logout',data=f'id={id}')
         return response.content.decode('utf-8')
 
+    # Función para obtener la lista de citas del médico
+    def getAppointmentsList(self,id):    
+        response=requests.get(self.url+'/listappointments',data=f'id={id}')
+        return response.content.decode('utf-8')
 
 
     # Función para obtener la lista de médicos

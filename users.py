@@ -61,3 +61,10 @@ def getDoctorIP(user_id):
     msg=f"Message from getDoctorIP function for user {user_id}, {myDate},{myTime}"   
 
     return msg
+
+# This function must return the list of appointments of doctor, doctor with doctor_id must be a doctor and have an open session
+def appointmentsList(doctor_id):
+    # Include the code to return the list of appointments
+
+    listOfAppointments=[]
+    return listOfAppointments
